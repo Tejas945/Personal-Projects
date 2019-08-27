@@ -1,0 +1,14 @@
+=====Install Homebrew=====
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+=======Install Wireshark======
+brew install wireshark --with-qt
+
+=======Install Sublime Text======
+brew cask install sublime-text
+
+=======Install Netcat======== 
+brew install netcat
+
+Install GNS3 from website using account login

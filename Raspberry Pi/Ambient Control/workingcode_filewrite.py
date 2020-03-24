@@ -34,7 +34,7 @@ def loop(ds18b20):
     while True:
        if read(ds18b20) != None:
         temp1= read(ds18b20)
-        temp2 = 25
+        temp2 = 25 #Temperature above which fan switches on to cool.
         file1 = open("Readings.txt","a")
         file1.write(str(temp1)+"\n")
         file1.close

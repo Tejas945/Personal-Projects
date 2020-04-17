@@ -1,0 +1,49 @@
+//Program to read an Ip address and Hour of day.
+//Check the number of IP's for a particular hour.
+
+public class test2{
+
+     public static void main(String []args){
+        ArrayList<HashSet<Integer>> list = new  ArrayList<HashSet<Integer>>();
+        for (i=0){
+            list.add(new Hashset<Integer>)
+        }
+        HashSet<String> set = new HashSet<String>();
+        
+         
+        File file = new File("input.txt");
+        
+        BufferedReader br = null;
+        
+        java.io.FileReader fr = new java.io.FileReader(file);
+        
+        br = new BufferedReader(fr);
+        
+        while((line= br.readLine())!= null)
+        {
+            String[] arrOfStr = line.split(",",2);
+            
+            DateTimeFormatter formatter = DateTime FormatterOfPattern("yyyy-MM-dd HH:mm:ss");
+            
+            LocalDateTime dateTime = LocalDateTime.parse(arrOfStr[1], formatter);
+            
+            int hour = dateTime.getHour();
+            
+            ipaddr = arrOfStr[0];
+            for(i=0; i<=23; i++){
+                if(hour==i){
+                    
+                    set.add(ipaddr);
+                    list.add(set);
+                    
+                }
+                
+            }
+            
+            
+            
+            
+            
+        }
+     }
+}
